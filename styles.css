@@ -27,6 +27,11 @@ header {
   height: 8rem;
 }
 
+footer {
+  background-color: rgb(20, 20, 20);
+  height: 8rem;
+}
+
 /* BARRA DE NAVEGAÇÃO */
 
 header #navbar {
@@ -127,10 +132,10 @@ main #banner .banner-content .banner-content-button:hover {
 }
 
 main #banner .banner-image {
-  border-radius: 30%;
+  /* border-radius: 30%; */
   width: 100%;
-  max-width: 50rem;
-  border: solid 0.5rem rgb(204, 176, 250);
+  max-width: 60rem;
+  /* border: solid 0.5rem rgb(204, 176, 250); */
 }
 
 @media (max-width: 92rem) {
@@ -151,6 +156,8 @@ section#posts {
   margin-top: 7.1rem;
   background-color: rgb(45, 45, 45);
   flex-grow: 1;
+  justify-content: space-between;
+  display: flex;
 }
 
 section#posts .posts-content {
@@ -185,12 +192,22 @@ section#posts .posts-content {
 
 #posts .posts-content .posts-cards {
   display: flex;
+  justify-content: space-between;
   gap: 3.2rem;
   margin-bottom: 3.2rem;
 }
 
 #posts .posts-content .posts-cards .post-card {
   padding: 2.4rem;
+}
+
+#posts .posts-content .posts-cards .post-card-middle {
+  padding: 2.4rem;
+}
+
+#posts .posts-content .posts-cards .post-card .post-card-image {
+  height: 200px;
+  width: 250px;
 }
 
 #posts .posts-content .posts-cards .post-card h3 {
@@ -212,6 +229,19 @@ section#posts .posts-content {
   font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
+}
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  text-decoration: none;
+  color: rgb(204, 176, 250);
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 @media (max-width: 74rem) {
