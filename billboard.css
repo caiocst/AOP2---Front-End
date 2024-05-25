@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "Heebo", sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(20, 20, 20);
+    height: 8rem;
+}
+
+footer {
+    background-color: rgb(20, 20, 20);
+    height: 8rem;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+header #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 3.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 8rem;
+
+    font-size: 1.6rem;
+}
+
+header .nav-brand {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: rgb(204, 176, 250);
+}
+
+header #navbar .nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.1rem;
+}
+
+header #navbar .nav-list .nav-item a {
+    text-decoration: none;
+    color: rgb(204, 176, 250);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+header #navbar .nav-list .nav-item a:hover {
+    color: #777;
+    transition: color 0.3s;
+}
+
+header .nav-brand:hover {
+    color: #777;
+    transition: color 0.3s;
+}
+
+/* SECTION BANNER */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+main section h3 {
+    text-decoration: none;
+    color: rgb(204, 176, 250);
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding-bottom: 4rem;
+}
+
+main section ul {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(204, 176, 250);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+main section ul li a {
+    text-decoration: none;
+    color: rgb(204, 176, 250);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+main section {
+    margin-top: 8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#link a:focus {
+    outline: none;
+}
+
+a:link,
+a:visited {
+    color: rgb(204, 176, 250); /* ou a cor desejada */
+}
+
+a:active {
+color: rgb(204, 176, 250); /* ou a cor desejada */
+}
+
+a:hover {
+color: #777;
+transition: color 0.3s;
+}
+
+@media (max-width: 74rem) {
+    main {
+        flex-direction: column;
+    }
+
+    main section ul {
+        padding-bottom: 2rem;
+    }
+}
+  
